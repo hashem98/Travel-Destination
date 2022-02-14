@@ -1,17 +1,14 @@
-import data from "../data.json"
+import data from "../../data/data.json"
 function Footer(props) {
     return (
 
         <>
-            {data.map(val => {
+            {data.map(val  => {
                 return (
-                    <div>
+                    <div key={val.id}>
                         <img src={val.image} alt={val.name} />
                         <h3>Name : {val.name}</h3>
-                        <br></br>
-                        <br></br>
-                        <br></br>
-                        <br></br>
+                       <hr></hr>
                     </div>
                 );
             })}
