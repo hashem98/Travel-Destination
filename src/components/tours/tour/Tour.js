@@ -1,11 +1,8 @@
-import "./Tours.css"
-import data from "../../data/data.json"
-import Tour from "./tour/Tour";
-function Tours(props) {
+function Tour(props) {
     return (
 
         <>
-            {/* {data.map((val,id)   => {
+            {props.data.map((val,id)   => {
                 return (
                     <div className="card" key={id}>
                         <img src={val.image} alt={val.name} />
@@ -13,13 +10,11 @@ function Tours(props) {
                        <hr></hr>
                     </div>
                 );
-            })} */}
-            < Tour data={data}/>
-            
+            })}
 
         </>
 
     );
 }
 
-export default Tours;
+export default Tour;
