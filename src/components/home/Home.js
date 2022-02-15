@@ -1,17 +1,12 @@
-import Header from "../header/Header";
-import Footer from "../footer/Footer";
-import Tours from "../tours/Tours";
-
-function Home (props) {
+import data from '../../data/data.json';
+import Tours from '../tours/Tours';
+import Footer from '../footer/Footer';
+function Home() {
     return (
-
         <>
-           <Header/>
-           <Footer/>
-           <Tours/>
+            <Tours data={data} />
+            <Footer />
         </>
-
     );
 }
-
 export default Home;
