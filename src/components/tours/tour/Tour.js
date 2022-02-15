@@ -1,20 +1,14 @@
 function Tour(props) {
-    return (
-
-        <>
-            {props.data.map((val,id)   => {
-                return (
-                    <div className="card" key={id}>
-                        <img src={val.image} alt={val.name} />
-                        <h3>Name : {val.name}</h3>
-                       <hr></hr>
-                    </div>
-                );
-            })}
-
-        </>
-
-    );
+  
+    
+        return (
+            <>
+                <div >
+                    <img src={props.tour.image} alt={props.tour.name} />
+                    <h3>Name : {props.tour.name}</h3>
+                </div>
+            </>
+        );
 }
 
 export default Tour;
